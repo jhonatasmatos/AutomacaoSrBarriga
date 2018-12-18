@@ -5,7 +5,7 @@ Funcionalidade: Login
 	Sendo um usuário cadastrado
 	Posso logar no sistema
 	
-	
+	@login
 	Cenário: Login do usuário
 		Quando faço login com "jhonatas-teste@teste.com" e "teste123"
 		Então sou autenticado com sucesso
