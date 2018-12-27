@@ -17,7 +17,7 @@ public class AdicionarContasSteps {
 	
 	@Dado("^que estou logado no sistema$")
 	public void queEstouLogadoNoSistema() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jhow\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\tools\\drivers\\chromedriver.exe");
 	    navegador = new ChromeDriver();
 	    navegador.get("https://srbarriga.herokuapp.com");
 	    
