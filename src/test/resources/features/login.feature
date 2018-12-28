@@ -1,5 +1,6 @@
 # language: pt
 
+@setupLogin @tearDownLogin
 Funcionalidade: Login
 	Para que eu possa gerenciar meus pagamentos
 	Sendo um usuário cadastrado
@@ -12,7 +13,7 @@ Funcionalidade: Login
 			Quando preencho "<email>" e "<senha>"
 			E clico em Entrar
 			Então devo ver a seguinte "<mensagem>"
-
+		
 		Exemplos:
 			|        email             |   senha   |           mensagem                 |
 			| jhonatas-teste@teste.com | teste123  | Bem vindo, Jhonatas Teste!         |

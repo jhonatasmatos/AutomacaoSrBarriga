@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.	selenium.chrome.ChromeDriver;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
@@ -16,10 +16,15 @@ public class LoginSteps {
 	
 	private WebDriver navegador;
 	
-	@Dado("^que acesso o sistema$")
-	public void que_acesso_o_sistema() throws Throwable {
+	@Before("@setupLogin")
+	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:\\tools\\drivers\\chromedriver.exe");
 	    navegador = new ChromeDriver();
+	    navegador.manage().window().maximize();
+	} 
+	
+	@Dado("^que acesso o sistema$")
+	public void que_acesso_o_sistema() throws Throwable {
 	    navegador.get("https://srbarriga.herokuapp.com");
 	}
 
@@ -40,8 +45,8 @@ public class LoginSteps {
 		assertEquals(mensagemEsperada, mensagemHome);		
 	}
 	
-	@After
+	@After("@tearDownLogin")
 	public void tearDown() {
 		navegador.close();
-	}
+	} 
 }

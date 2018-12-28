@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 		plugin = "pretty",
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true,
+		tags = {"@setupLogin", "@tearDownLogin"},
 		glue = "steps",
 		features = "src/test/resources/features/login.feature",
 		dryRun = false,
