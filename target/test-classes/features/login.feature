@@ -1,6 +1,6 @@
 # language: pt
 
-@setupLogin @tearDownLogin
+@login
 Funcionalidade: Login
 	Para que eu possa gerenciar meus pagamentos
 	Sendo um usuário cadastrado

@@ -1,6 +1,6 @@
 # language: pt
 
-@setupContas @tearDownContas
+@adicionarContas
 Funcionalidade: Adicionar contas
 	Para que eu possa organizar minhas contas
 	Sendo um usuário cadastrado
