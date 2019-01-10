@@ -6,7 +6,7 @@ Funcionalidade: Login
 	Sendo um usuário cadastrado
 	Posso logar no sistema
 
-	Contexto:
+	Contexto: Home
 		Dado que acesso o sistema
 		
 		Esquema do Cenário: Deve validar usuário e senha
