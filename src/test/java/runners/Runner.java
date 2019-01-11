@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true,
 		glue = {"steps"},
-		features = "src/test/resources/features/novo_usuario.feature",
+		features = "src/test/resources/features/",
 		dryRun = false,
 		strict = true
 		)
